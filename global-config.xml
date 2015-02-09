@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.598</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:anonymous</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:anonymous</permission>
+    <permission>hudson.model.Computer.Build:admin</permission>
+    <permission>hudson.model.Computer.Build:anonymous</permission>
+    <permission>hudson.model.Computer.Configure:admin</permission>
+    <permission>hudson.model.Computer.Configure:anonymous</permission>
+    <permission>hudson.model.Computer.Connect:admin</permission>
+    <permission>hudson.model.Computer.Connect:anonymous</permission>
+    <permission>hudson.model.Computer.Create:admin</permission>
+    <permission>hudson.model.Computer.Create:anonymous</permission>
+    <permission>hudson.model.Computer.Delete:admin</permission>
+    <permission>hudson.model.Computer.Delete:anonymous</permission>
+    <permission>hudson.model.Computer.Disconnect:admin</permission>
+    <permission>hudson.model.Computer.Disconnect:anonymous</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
+    <permission>hudson.model.Hudson.Administer:anonymous</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:admin</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:admin</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.RunScripts:admin</permission>
+    <permission>hudson.model.Hudson.RunScripts:anonymous</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:admin</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:anonymous</permission>
+    <permission>hudson.model.Item.Build:admin</permission>
+    <permission>hudson.model.Item.Build:anonymous</permission>
+    <permission>hudson.model.Item.Cancel:admin</permission>
+    <permission>hudson.model.Item.Cancel:anonymous</permission>
+    <permission>hudson.model.Item.Configure:admin</permission>
+    <permission>hudson.model.Item.Configure:anonymous</permission>
+    <permission>hudson.model.Item.Create:admin</permission>
+    <permission>hudson.model.Item.Create:anonymous</permission>
+    <permission>hudson.model.Item.Delete:admin</permission>
+    <permission>hudson.model.Item.Delete:anonymous</permission>
+    <permission>hudson.model.Item.Discover:admin</permission>
+    <permission>hudson.model.Item.Discover:anonymous</permission>
+    <permission>hudson.model.Item.Read:admin</permission>
+    <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.Item.Workspace:admin</permission>
+    <permission>hudson.model.Item.Workspace:anonymous</permission>
+    <permission>hudson.model.Run.Delete:admin</permission>
+    <permission>hudson.model.Run.Delete:anonymous</permission>
+    <permission>hudson.model.Run.Update:admin</permission>
+    <permission>hudson.model.Run.Update:anonymous</permission>
+    <permission>hudson.model.View.Configure:admin</permission>
+    <permission>hudson.model.View.Configure:anonymous</permission>
+    <permission>hudson.model.View.Create:admin</permission>
+    <permission>hudson.model.View.Create:anonymous</permission>
+    <permission>hudson.model.View.Delete:admin</permission>
+    <permission>hudson.model.View.Delete:anonymous</permission>
+    <permission>hudson.model.View.Read:admin</permission>
+    <permission>hudson.model.View.Read:anonymous</permission>
+    <permission>hudson.scm.SCM.Tag:admin</permission>
+    <permission>hudson.scm.SCM.Tag:anonymous</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>false</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name>JDK: LocalSDK</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.JDKInstaller>
+              <id>jdk-7u55-oth-JPR</id>
+              <acceptLicense>true</acceptLicense>
+            </hudson.tools.JDKInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.26">
+      <name>ec2-us-east-1</name>
+      <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
+      <accessId>AKIAJSNBZWZQ2AGNLS3Q</accessId>
+      <secretKey>Y+5uBVJH0ULoq3Jiaa2YpwM3bCQgEa/bpDZw29MI9pZcXKcys3t+9m78DHjLmi2WNbmZqL7dTKAOVemsbhuACg==</secretKey>
+      <privateKey>
+        <privateKey>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</privateKey>
+      </privateKey>
+      <instanceCap>2147483647</instanceCap>
+      <templates>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-9a562df2</ami>
+          <description>AMI for devops project pipeline</description>
+          <zone>us-east-1c</zone>
+          <securityGroups>team-devops</securityGroups>
+          <remoteFS>/tmp</remoteFS>
+          <type>T2Micro</type>
+          <labels>project pipeline</labels>
+          <mode>NORMAL</mode>
+          <initScript>export JAVA=&quot;/usr/bin/java&quot;
+if [ ! -x &quot;$JAVA&quot; ]; then
+sudo apt-get update
+sleep 10
+sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java libcups2 libcups2 libjpeg8 icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk
+fi
+</initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors>1</numExecutors>
+          <remoteAdmin>ubuntu</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId></subnetId>
+          <idleTerminationMinutes>30</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>false</stopOnTerminate>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>false</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.UnixData">
+            <rootCommandPrefix></rootCommandPrefix>
+            <sshPort>22</sshPort>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+        </hudson.plugins.ec2.SlaveTemplate>
+      </templates>
+      <region>us-east-1</region>
+    </hudson.plugins.ec2.EC2Cloud>
+  </clouds>
+  <slaves/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label></label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>
