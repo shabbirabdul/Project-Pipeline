@@ -1,8 +1,8 @@
-# Project-Pipeline
 Devops project pipeline for building project
 
-Download Jenkins war and run it using the following command from terminal
+Jenkins Server setup: 
 
+Download Jenkins war and run it using the following command from terminal
 java -jar jenkins.war
 
 Jenkins GitHub plugin installation
@@ -41,7 +41,6 @@ To our configuration. We  build one of the project hosted on GitHub. This projec
   Enter compile in the Goals field
   Click Advanced... button
   Enter LilyPadCompass/pom.xml in the POM field
-
 You need to tell Jenkins where to find pom.xml file when looking from the root of the project.
 
  Click Apply and then Save
@@ -57,7 +56,17 @@ Git Hook Configuration:
  Now, when a commit is pushed to github the project is build automatically.
 
 Dependencies set up and build script execution:
-All the required dependencies are 
+All the required dependencies are listed in pom.xml and the build server(Jenkins) will pick the build script configured in the project. The Pom.xml has public repos listed in the file, which picks the required dependencies necessary for clean build. The clean install command configured while building a job is 
+
+Multiple Nodes:
+We used AWS to configure Jenkins slaves(2) and the master running on our machine. The AWS nodes have been configured to run when a build is triggered based on the tag values(A String to tell which node to run from). When a build is triggered with tag values mentioned the slaves would be triggered automatically. 
+
+Build Status:
+
+Jenkins provides a way of getting the status of the build by posting a HTTP post method. The response is retured in the form of a JSON object. 
+The below URL will give Response of the build status when triggered.
+
+
  
  
  
