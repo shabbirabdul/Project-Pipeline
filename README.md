@@ -49,7 +49,7 @@
   - Click Apply and then Save
   - On the next screen click Build Now button
   - In the Build History section a new build has appeared
-  To see how the project is being cloned and build see: Move your mouse over it and select Console Output item
+  - To see how the project is being cloned and build: Move your mouse over it and select Console Output item
 
 ####Git Hook Configuration
 
