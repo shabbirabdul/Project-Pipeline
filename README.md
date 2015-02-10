@@ -53,10 +53,12 @@
 
 ####Git Hook Configuration
 
-   Git Hook allow you to notify Jenkins of a new commit. 
-   The following command is added to pre-push 
+   Git Hook allow you to notify Jenkins of a new commit. The following command is added to pre-push 
+   
    `curl http://localhost:9191/job/Test/build?token=LONG_RANDOM_TOKEN`
+   
    The value of the token in the project settings configurations will remain the same.
+   
    Now, when a commit is pushed to github repository of the project, it will be build automatically.
 
 ####Dependencies set up and build script execution
