@@ -72,4 +72,4 @@
 
    Jenkins provides a way of getting the status of the build by posting a HTTP post method. The response is returned in the form of a JSON object. 
    The below URL will give Response of the build status when triggered.
-   http://localhost:8080/job/Test/lastSuccessfulBuild/api/json   
+   `http://localhost:8080/job/Test/lastSuccessfulBuild/api/json`   
