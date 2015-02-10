@@ -62,7 +62,7 @@
 
 ####Dependencies set up and build script execution
 
-   All the required dependencies are listed in pom.xml and the build server(Jenkins) will pick the build script configured in the project. The Pom.xml has public repos listed in the file, which picks the required dependencies necessary for clean build. The clean install command configured while building a job is:  
+   All the required dependencies are listed in pom.xml and the build server(Jenkins) will pick the build script configured in the project. The Pom.xml has public repos listed in the file, which picks the required dependencies necessary for clean build. The clean install command configured while building a job is:  clean install
 
 ####Multiple Nodes
    
@@ -72,4 +72,4 @@
 
    Jenkins provides a way of getting the status of the build by posting a HTTP post method. The response is returned in the form of a JSON object. 
    The below URL will give Response of the build status when triggered.
-   
+   http://localhost:8080/job/Test/lastSuccessfulBuild/api/json   
