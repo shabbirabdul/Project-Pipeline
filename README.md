@@ -11,7 +11,7 @@
 
   In order to build projects that are hosted on a GitHub repository, our Jenkins installation has to have GitHub Plugin installed by following these steps:
 
-  - Navigate to http://localhost:8080/jenkins
+  - Navigate to `http://localhost:8080/jenkins`
   - Click Manage Jenkins
   - Click Manage Plugins
   - Click the Available tab
